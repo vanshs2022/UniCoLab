@@ -63,7 +63,7 @@ body {
   font-size: 1.9vw;
 }
 .select{
-  background-color: #081a91;
+  background-color: rgb(8, 26, 145);
 }
 .stackedcard{
   background-color: #ededed;
@@ -75,4 +75,14 @@ body {
 .faq{
   background-color: #ededed;
   color: black;
+}
+
+.contact{
+  height: 100vh;
+  width: 100vw;
+  background-color: #ededed;
+}
+
+.contact_button{
+  background-color: rgb(64, 106, 245);
 }
