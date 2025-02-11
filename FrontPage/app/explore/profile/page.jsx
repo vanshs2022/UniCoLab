@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link"; // Import Link for Next.js routing
 
 export default function Profiles() {
   const [profiles, setProfiles] = useState([]);
@@ -31,10 +32,10 @@ export default function Profiles() {
   }
 
   return (
-    
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-        {profiles.map((profile, index) => (
-          <div key={index} className="p-4 border rounded-lg shadow-md w-96">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      {profiles.map((profile, index) => (
+        <Link key={index} href={`/explore/profile/${profile._id}`} passHref>
+          <div className="p-4 border rounded-lg shadow-md w-96 cursor-pointer hover:bg-gray-100">
             <h2 className="text-xl font-bold mb-2">{profile.name || "N/A"}</h2>
             {profile.profilePic && (
               <img
@@ -47,8 +48,8 @@ export default function Profiles() {
               <strong>Role:</strong> {profile.role || "N/A"}
             </p>
           </div>
-        ))}
-      </div>
-    
+        </Link>
+      ))}
+    </div>
   );
 }
