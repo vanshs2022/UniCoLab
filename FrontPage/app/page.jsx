@@ -6,10 +6,12 @@ import Mission from "./Comp/Mission/page";
 import  AboutUs from "./Comp/AboutUs/page";
 import Profiles from "./Comp/pROFILES/page";
 import Contact from "./Comp/Contact/page";
+import Navbar from "./Comp/Navbar/page"
 
 const Page = () => {
   return (
     <div className="page">
+      <Navbar />
       <Landing />
       <AboutUs />
       <Profiles />
