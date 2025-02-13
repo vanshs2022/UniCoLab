@@ -45,7 +45,6 @@ app.get('/api/profile/:id', async (req, res) => {
   let { id } = req.params;
   const profile = await Profile.findById(id);
   res.send(profile);
-  // i need a template in the profile page section such that i get the request from there with proper id and i can send the response
 });
 
 const PORT = 5000;
