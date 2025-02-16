@@ -1,16 +1,24 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link"; // Import Link for Next.js routing
+import Link from "next/link"; 
 
 export default function Profiles() {
   const [profiles, setProfiles] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function fetchProfiles() {
+    async function fetchProfiles(filters) {
       try {
-        const response = await fetch("http://localhost:5000/api/profile");
+        const params = new URLSearchParams(window.location.search);
+        
+        const filters = Object.fromEntries(params.entries());
+
+        console.log("Extracted Filters:", filters);
+
+        const queryString = new URLSearchParams(filters).toString();
+        const apiUrl = `http://172.17.16.169:5000/api/profile?${queryString}`;
+        const response = await fetch(apiUrl);
         const data = await response.json();
         setProfiles(data);
       } catch (error) {
