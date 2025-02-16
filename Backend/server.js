@@ -37,9 +37,17 @@ app.post('/api/profile/edit', async (req, res) => {
 
 
 app.get('/api/profile', async (req, res) => {
-  const profiles = await Profile.find({}, "name profilePic role");
+  let query = {};
+  console.log('Query received:', req.query);
+
+  for (let key in req.query) {
+    query[key] = { $regex: new RegExp(req.query[key], "i") };
+  }
+
+  const profiles = await Profile.find(query, "name profilePic role");
   res.send(profiles);
 });
+
 
 app.get('/api/profile/:id', async (req, res) => {
   let { id } = req.params;
