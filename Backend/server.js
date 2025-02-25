@@ -23,6 +23,7 @@ app.post('/api/contact', (req, res) => {
   res.status(200).json({ message: 'Message received!' });
 });
 
+// profile edit and create request
 app.post('/api/profile/edit', async (req, res) => {
   try {
     console.log('Received form data', req.body);
@@ -35,7 +36,7 @@ app.post('/api/profile/edit', async (req, res) => {
   }
 });
 
-
+// profile display and filteration
 app.get('/api/profile', async (req, res) => {
   let query = {};
   console.log('Query received:', req.query);
@@ -48,7 +49,7 @@ app.get('/api/profile', async (req, res) => {
   res.send(profiles);
 });
 
-
+// individual profile display
 app.get('/api/profile/:id', async (req, res) => {
   let { id } = req.params;
   const profile = await Profile.findById(id);
