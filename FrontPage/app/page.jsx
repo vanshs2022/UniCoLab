@@ -13,9 +13,9 @@ const Page = () => {
     <div className="page">
       <Navbar />
       <Landing />
-      <AboutUs />
-      <Profiles />
       <Mission />
+      <Profiles />
+      <AboutUs />
       <Contact />
     </div>
   );

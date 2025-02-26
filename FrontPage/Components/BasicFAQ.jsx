@@ -8,34 +8,27 @@ const BasicFAQ = () => {
     <div className="px-4 py-12">
       <div className="mx-auto max-w-3xl">
         <h3 className="mb-4 text-center text-3xl font-semibold">
-          Frequently asked questions
+          Your Doubt Might Be Here !!!
         </h3>
-        <Question title="Why is the sky blue?" defaultOpen>
+        <Question title="Do I need to log in to search for talent?" defaultOpen>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          No, anyone can browse profiles without logging in. However, if you want to connect with someone, you must sign in. This ensures a secure and trusted community.
+
           </p>
         </Question>
-        <Question title="Why did the chicken cross the road?">
+        <Question title="Is this platform free to use?">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          Yes, UniCoLab is completely free for talent and seekers. Our goal is to make collaboration and networking easier without any barriers.
           </p>
         </Question>
-        <Question title="How many licks does it take to get to the center of a tootsie pop?">
+        <Question title="How is UniCoLab different from LinkedIn or other job platforms?">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          Unlike generic job platforms, it focuses on hackathon collaborations, project partnerships, and direct internship connections between talent and seeker.
           </p>
         </Question>
-        <Question title="Where's Waldo?">
+        <Question title="Can I find internship opportunities on this platform?">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          Yes! Startup founders and incubators looking for interns can browse profiles and reach out directly to potential interns. However, students cannot apply for internships through the platform—only recruiters can initiate contact.
           </p>
         </Question>
       </div>

@@ -13,13 +13,11 @@ const StackedCardTestimonials = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="stackedcard bg-white py-24 px-4 lg:px-8 grid items-center grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 overflow-hidden">
+    <section id="mission" className="stackedcard bg-white py-24 px-4 lg:px-8 grid items-center grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 overflow-hidden">
       <div className="p-4">
         <h3 className="miss-title text-5xl font-semibold ">Our Mission</h3>
-        <p className="miss-para text-black my-4">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-          commodi sint, similique cupiditate possimus suscipit delectus illum
-          eos iure magnam!
+        <p className="miss-para text-black my-4" >
+        At UniColab, our mission is to bridge the gap between talent and opportunities by creating a seamless platform where students can connect, collaborate, and grow together. We aim to empower individuals by making it easier to find the right teammates for projects, hackathons, and internships. By fostering a strong, skill-driven community, we strive to unlock the full potential of every student and help them achieve their goals.
         </p>
         <SelectBtns
           numTracks={testimonials.length}
@@ -34,7 +32,7 @@ const StackedCardTestimonials = () => {
       />
     </section>
   );
-};
+}; 
 
 const SelectBtns = ({ numTracks, setSelected, selected }) => (
   <div className="flex gap-1 mt-8">
@@ -116,7 +114,8 @@ const Card = ({
       onClick={() => setSelected(position)}
       className="absolute top-0 left-0 w-full min-h-full p-8 lg:p-12 cursor-pointer flex flex-col justify-between"
     >
-      <Icon className="text-7xl mx-auto" />
+      {/* <Icon className="text-7xl mx-auto" /> */}
+      <h1 className="mission_title">{Icon}</h1>
       <p className="text-lg lg:text-xl font-light italic my-8">
         "{description}"
       </p>
@@ -132,21 +131,21 @@ export default StackedCardTestimonials;
 
 const testimonials = [
   {
-    Icon: SiNike,
-    description: "Lorem ipsum dolor...",
-    name: "Jane Dodson",
-    title: "Marketing Director, Nike",
+    Icon: "CREATE",
+    description: "UniColab provides a space for students to showcase their skills, experiences, and projects. Whether you're a developer, designer, or strategist, your profile will highlight your strengths and increase your visibility to potential teammates and recruiters.",
+    // name: "Jane Dodson",
+    // title: "Marketing Director, Nike",
   },
   {
-    Icon: SiNike,
-    description: "Lorem ipsum dolor...",
-    name: "Jane Dodson",
-    title: "Marketing Director, Nike",
+    Icon: "COLLAB",
+    description: "Finding the right team has never been easier. With UniColab, students can connect with like-minded peers, form strong teams for hackathons or projects, and work on ideas that can turn into reality. The platform ensures efficient matchmaking based on skills and interests, streamlining the process of team formation.",
+    // name: "Jane Dodson",
+    // title: "Marketing Director, Nike",
   },{
-    Icon: SiNike,
-    description: "Lorem ipsum dolor...",
-    name: "Jane Dodson",
-    title: "Marketing Director, Nike",
+    Icon: "CONTRIBUTE",
+    description: "Beyond finding teams, UniColab encourages knowledge sharing and networking. By engaging with the community, offering mentorship, and contributing to projects, students can enhance their expertise and support others. We believe that great ideas thrive in collaborative environments, and UniColab is here to nurture that spirit.",
+    // name: "Jane Dodson",
+    // title: "Marketing Director, Nike",
   },
   // Additional testimonials...
 ];

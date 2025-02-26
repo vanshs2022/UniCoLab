@@ -67,7 +67,10 @@ body {
 }
 .stackedcard{
   background-color: #ededed;
+  p{
+    font-size: larger;
 
+  }
 }
 .button{
   background-color: #4d4c4c;
@@ -95,6 +98,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* border-bottom-left-radius: 100px; */
   /* box-shadow: 100px 140px 180px rgb(255, 0, 0); Adds shadow at the bottom */
   /* box-shadow: 0px 6px 10px rgb(255, 0, 0); */
 
@@ -131,4 +135,13 @@ body {
     height: 180px;
     width: 180px;
   }
+}
+
+.mission_title{
+  width: 100%;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
 }

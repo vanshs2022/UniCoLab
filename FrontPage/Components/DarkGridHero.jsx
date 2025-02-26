@@ -1,3 +1,5 @@
+"use client"
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
@@ -86,12 +88,13 @@ const Content = () => {
         className="flex flex-col items-center gap-6 sm:flex-row"
       >
         <SplashButton className="flex items-center gap-2">
-          Try it free
+          <Link href="/">Our Community </Link>
           <FiArrowRight />
         </SplashButton>
         <GhostButton className="rounded-md px-4 py-2 text-zinc-100">
-          Learn more
-        </GhostButton>
+        <Link href="#mission">  Our Mission </Link>
+        
+        </GhostButton>      
       </motion.div>
     </div>
   );
