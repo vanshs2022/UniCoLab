@@ -1,0 +1,232 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a192f; /* Dark blue background */
+    color: #ccd6f6; /* Light text color */
+    line-height: 1.6;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #112240; /* Darker blue for header */
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #64ffda; /* Light blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #8892b0; /* Lighter blue on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0a192f; /* Match body background color */
+    padding: 100px 0;
+    text-align: center;
+    flex: 1; /* Allow hero to take remaining space */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ccd6f6; /* Light text color */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #8892b0; /* Light gray for subtext */
+}
+
+.cta-button {
+    background-color: #64ffda; /* Light blue for button */
+    color: #0a192f; /* Dark text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #52d1b2; /* Slightly darker light blue on hover */
+}
+
+/* Login Page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Allow login container to take remaining space */
+    background-color: #0a192f; /* Match body background color */
+}
+
+.login-box {
+    background-color: #112240; /* Darker blue for login box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #ccd6f6; /* Light text color */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #8892b0; /* Light gray for labels */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #0a192f; /* Dark blue for input background */
+    border: 1px solid #64ffda; /* Light blue border */
+    border-radius: 5px;
+    color: #ccd6f6; /* Light text color */
+    font-size: 16px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #64ffda; /* Light blue for button */
+    color: #0a192f; /* Dark text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #52d1b2; /* Slightly darker light blue on hover */
+}
+
+.signup-link {
+    margin-top: 15px;
+    color: #8892b0; /* Light gray for text */
+}
+
+.signup-link a {
+    color: #64ffda; /* Light blue for link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+    color: #52d1b2; /* Slightly darker light blue on hover */
+}
+
+/* Signup Page */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Allow signup container to take remaining space */
+    background-color: #0a192f; /* Match body background color */
+}
+
+.signup-box {
+    background-color: #112240; /* Darker blue for signup box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.signup-box h2 {
+    margin-bottom: 20px;
+    color: #ccd6f6; /* Light text color */
+}
+
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #64ffda; /* Light blue for button */
+    color: #0a192f; /* Dark text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #52d1b2; /* Slightly darker light blue on hover */
+}
+
+.login-link {
+    margin-top: 15px;
+    color: #8892b0; /* Light gray for text */
+}
+
+.login-link a {
+    color: #64ffda; /* Light blue for link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #52d1b2; /* Slightly darker light blue on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #112240; /* Darker blue for footer */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+footer p {
+    color: #8892b0; /* Light gray for text */
+}
